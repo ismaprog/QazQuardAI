@@ -1,0 +1,2 @@
+# QazQuardAI
+Project ICT Endterm
