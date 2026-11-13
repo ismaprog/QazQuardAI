@@ -33,10 +33,8 @@ OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in globals
 DATASET_PATH = os.path.join(OUTPUT_DIR, "synthetic_prompts_kz.csv")
 LABELS = ["SAFE", "SENSITIVE_PII", "JAILBREAK"]
 
+#БАҚЫЛАУ СОМАЛАРЫ (ЖСН/БСН, IBAN, Luhn)
 
-# ==============================================================================
-# 0. БАҚЫЛАУ СОМАЛАРЫ (ЖСН/БСН, IBAN, Luhn)
-# ==============================================================================
 def _weight2(i: int) -> int:
     """ЖСН/БСН екінші өту салмақтары (0..10 позициялар үшін): 3,4,...,11,1,2."""
     w = i + 3
